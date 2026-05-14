@@ -132,9 +132,9 @@ class PlayerPlaceholder:
     
     def track_thumbnail(self) -> str:
         if not self.player or not self.player.current:
-            return "https://i.imgur.com/dIFBwU7.png"
+            return self.bot.user.display_avatar.url
         
-        return self.player.current.thumbnail or "https://cdn.discordapp.com/attachments/674788144931012638/823086668445384704/eq-dribbble.gif"
+        return self.player.current.thumbnail or self.bot.user.display_avatar.url
 
     def queue_length(self) -> str:
         return str(self.player.queue.count) if self.player else "0"
