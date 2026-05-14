@@ -1,8 +1,8 @@
 {
-    "token": "MTUwMzk0MzUyNDQ1Njg2MTcyNg.G8Z3oH.zWoGcpawKCQRcDWwbNiBZb_17xZfpPEOncGhJ0",
-    "client_id": "1503943524456861726",
-    "genius_token": "GGWOEn1UqtVzi-R8l5GLrjQYESMUK_6A4J2ZQCT4E2RIEegxPcRkOqJzP61hDj-76FMPsp2Y82Yl2LhAbMS5Mg",
-    "mongodb_url": "mongodb+srv://AxonXmongodb:lZ094WUUk5XVHhlH@cluster0.l3wkja9.mongodb.net/?appName=Cluster0",
+    "token": "YOUR_TOKEN",
+    "client_id": "YOUR_CLIENTID",
+    "genius_token": "YOUR_GENIUSTOKEN",
+    "mongodb_url": "YOUR_MONGODB",
     "mongodb_name": "AxonX",
     "nodes": {
         "DEFAULT": {
