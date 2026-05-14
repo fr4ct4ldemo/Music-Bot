@@ -1,0 +1,437 @@
+2026-05-12 19:21:53 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:21:53 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:21:55 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:21:55 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:21:56 [INFO    ] yeetify: Loaded task
+2026-05-12 19:21:56 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778638916.14
+2026-05-12 19:21:56 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:21:56 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:21:56 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:21:57 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0cf9657cb3274ad4d307aaf42294f3b1).
+2026-05-12 19:21:59 [INFO    ] yeetify: ------------------
+2026-05-12 19:21:59 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:21:59 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:21:59 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:21:59 [INFO    ] yeetify: ------------------
+2026-05-12 19:21:59 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:21:59 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:21:59 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:21:59 [INFO    ] yeetify: ------------------
+2026-05-12 19:21:59 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:25:25 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:25:29 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:25:29 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:25:31 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:25:31 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:25:31 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:25:32 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:25:32 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:25:32 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:25:32 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:25:32 [INFO    ] yeetify: Loaded task
+2026-05-12 19:25:32 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778639132.10
+2026-05-12 19:25:32 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:25:32 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:25:32 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:25:33 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2c6bce3fb3fe962cd4f07063e2b61008).
+2026-05-12 19:25:35 [INFO    ] yeetify: ------------------
+2026-05-12 19:25:35 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:25:35 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:25:35 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:25:35 [INFO    ] yeetify: ------------------
+2026-05-12 19:25:35 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:25:35 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:25:35 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:25:35 [INFO    ] yeetify: ------------------
+2026-05-12 19:25:35 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:29:20 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:29:24 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:29:24 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:29:27 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:29:27 [INFO    ] yeetify: Loaded task
+2026-05-12 19:29:27 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778639367.46
+2026-05-12 19:29:27 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:29:28 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:29:28 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:29:29 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f64b205784ccc962779de19aa5588b83).
+2026-05-12 19:29:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:29:31 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:29:31 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:29:31 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:29:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:29:31 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:29:31 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:29:31 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:29:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:29:31 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:31:25 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:31:25 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:31:28 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:31:28 [INFO    ] yeetify: Loaded task
+2026-05-12 19:31:28 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778639488.37
+2026-05-12 19:31:28 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:31:28 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:31:29 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:31:30 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 18429616476ec2467a5f06a1495ec63f).
+2026-05-12 19:31:32 [INFO    ] yeetify: ------------------
+2026-05-12 19:31:32 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:31:32 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:31:32 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:31:32 [INFO    ] yeetify: ------------------
+2026-05-12 19:31:32 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:31:32 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:31:32 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:31:32 [INFO    ] yeetify: ------------------
+2026-05-12 19:31:32 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:32:40 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:32:46 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:32:46 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:32:49 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:32:49 [INFO    ] yeetify: Loaded task
+2026-05-12 19:32:49 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778639569.24
+2026-05-12 19:32:49 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:32:49 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:32:49 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:32:50 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c1ff923b542462f511e1ec1fba938603).
+2026-05-12 19:32:52 [INFO    ] yeetify: ------------------
+2026-05-12 19:32:52 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:32:52 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:32:52 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:32:52 [INFO    ] yeetify: ------------------
+2026-05-12 19:32:52 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:32:52 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:32:52 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:32:52 [INFO    ] yeetify: ------------------
+2026-05-12 19:32:52 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:47:18 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:47:25 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:47:25 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:47:27 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:47:27 [INFO    ] yeetify: Loaded task
+2026-05-12 19:47:27 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778640447.97
+2026-05-12 19:47:27 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:47:28 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:47:28 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:47:29 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9781a1b8d37a3d8cdb46829b9d609c08).
+2026-05-12 19:47:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:47:31 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:47:31 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:47:31 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:47:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:47:31 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:47:31 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:47:31 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:47:31 [INFO    ] yeetify: ------------------
+2026-05-12 19:47:31 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:50:06 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:50:11 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:50:11 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:50:13 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:50:13 [INFO    ] yeetify: Loaded task
+2026-05-12 19:50:13 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778640613.93
+2026-05-12 19:50:13 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:50:14 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:50:16 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:50:17 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fa7e2dc20d23d64c5e84de6f6aec72f2).
+2026-05-12 19:50:19 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 19:50:19 [INFO    ] yeetify: ------------------
+2026-05-12 19:50:19 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:50:19 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:50:19 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:50:19 [INFO    ] yeetify: ------------------
+2026-05-12 19:50:19 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:50:19 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:50:19 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:50:19 [INFO    ] yeetify: ------------------
+2026-05-12 19:50:19 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocarc
+2026-05-12 19:54:29 [INFO    ] yeetify: Unload Translator
+2026-05-12 19:56:48 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:56:48 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:56:51 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:56:51 [INFO    ] yeetify: Loaded task
+2026-05-12 19:56:51 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641011.50
+2026-05-12 19:56:51 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:56:52 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:56:52 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:56:52 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 19b74bb99a68ba05f3723a4b3edf2ee6).
+2026-05-12 19:56:54 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 19:56:55 [INFO    ] yeetify: ------------------
+2026-05-12 19:56:55 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:56:55 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:56:55 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:56:55 [INFO    ] yeetify: ------------------
+2026-05-12 19:56:55 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:56:55 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:56:55 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:56:55 [INFO    ] yeetify: ------------------
+2026-05-12 19:56:55 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 19:57:40 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:57:40 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:57:43 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:57:43 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:58:19 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:58:19 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:58:22 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:58:22 [INFO    ] yeetify: Loaded task
+2026-05-12 19:58:22 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641102.21
+2026-05-12 19:58:22 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:58:22 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:58:22 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:58:23 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ef58f4a64c8c0fa63cf05b69b6fa7f40).
+2026-05-12 19:58:25 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 19:58:25 [INFO    ] yeetify: ------------------
+2026-05-12 19:58:25 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:58:25 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:58:25 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:58:25 [INFO    ] yeetify: ------------------
+2026-05-12 19:58:25 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:58:25 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:58:25 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:58:25 [INFO    ] yeetify: ------------------
+2026-05-12 19:58:25 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 19:59:36 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 19:59:36 [INFO    ] yeetify: Yeetify vv2.7.3 starting up...
+2026-05-12 19:59:36 [INFO    ] yeetify: Prefix: ?
+2026-05-12 19:59:36 [INFO    ] yeetify: Author: Encore
+2026-05-12 19:59:36 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 19:59:36 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:59:36 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:59:39 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded Translator
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded basic
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded effect
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded listeners
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded playlist
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded settings
+2026-05-12 19:59:39 [INFO    ] yeetify: Loaded task
+2026-05-12 19:59:39 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641179.66
+2026-05-12 19:59:39 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:59:40 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 19:59:40 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:59:41 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ae9d97ed5f8b2bd2c0a39f7e08d505d4).
+2026-05-12 19:59:43 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 19:59:43 [INFO    ] yeetify: ------------------
+2026-05-12 19:59:43 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 19:59:43 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 19:59:43 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 19:59:43 [INFO    ] yeetify: ------------------
+2026-05-12 19:59:43 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 19:59:43 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 19:59:43 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:59:43 [INFO    ] yeetify: ------------------
+2026-05-12 19:59:43 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:00:08 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 20:00:08 [INFO    ] yeetify: Yeetify vv2.7.3 starting up...
+2026-05-12 20:00:08 [INFO    ] yeetify: Prefix: ?
+2026-05-12 20:00:08 [INFO    ] yeetify: Author: Encore
+2026-05-12 20:00:08 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 20:00:08 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:00:08 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:00:10 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:00:10 [INFO    ] yeetify: Loaded task
+2026-05-12 20:00:10 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641210.46
+2026-05-12 20:00:10 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:00:11 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:00:11 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:00:12 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 051aef17f27b08e2e69a7508a1e8bb9d).
+2026-05-12 20:00:14 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:00:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:00:14 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:00:14 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:00:14 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:00:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:00:14 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:00:14 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:00:14 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:00:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:00:14 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:00:28 [INFO    ] yeetify: Unload Translator
+2026-05-12 20:00:34 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 20:00:34 [INFO    ] yeetify: Yeetify vv2.7.3 starting up...
+2026-05-12 20:00:34 [INFO    ] yeetify: Prefix: ?
+2026-05-12 20:00:34 [INFO    ] yeetify: Author: Encore
+2026-05-12 20:00:34 [INFO    ] yeetify: ════════════════════════════════════════════════════════════
+2026-05-12 20:00:34 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:00:34 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:00:36 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:00:36 [INFO    ] yeetify: Loaded task
+2026-05-12 20:00:36 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641236.63
+2026-05-12 20:00:36 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:00:37 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:01:11 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:01:12 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3a3f0d4eb43d5d95c40402675b19dff7).
+2026-05-12 20:01:14 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:01:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:01:14 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:01:14 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:01:14 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:01:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:01:14 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:01:14 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:01:14 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:01:14 [INFO    ] yeetify: ------------------
+2026-05-12 20:01:14 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:10:44 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:10:44 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:10:46 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:10:46 [INFO    ] yeetify: Loaded task
+2026-05-12 20:10:46 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641846.54
+2026-05-12 20:10:46 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:10:47 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:10:47 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:10:47 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: eb25ed0e7e5ef4b523cd130bdca7dc0b).
+2026-05-12 20:10:49 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:10:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:10:49 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:10:49 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:10:49 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:10:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:10:49 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:10:49 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:10:49 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:10:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:10:49 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:10:57 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:10:57 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:11:00 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:11:00 [INFO    ] yeetify: Loaded task
+2026-05-12 20:11:00 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641860.17
+2026-05-12 20:11:00 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:11:00 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:11:26 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:11:26 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:11:28 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:11:28 [INFO    ] yeetify: Loaded task
+2026-05-12 20:11:28 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778641888.54
+2026-05-12 20:11:28 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:11:28 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:11:47 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:11:47 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 645b37aebe70dc04b32b68da4e743278).
+2026-05-12 20:11:49 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:11:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:11:49 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:11:49 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:11:49 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:11:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:11:49 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:11:49 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:11:49 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:11:49 [INFO    ] yeetify: ------------------
+2026-05-12 20:11:49 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:12:17 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:12:18 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f72b5a611eacbf92b5d88b95cc68b501).
+2026-05-12 20:12:20 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:12:20 [INFO    ] yeetify: ------------------
+2026-05-12 20:12:20 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:12:20 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:12:20 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:12:20 [INFO    ] yeetify: ------------------
+2026-05-12 20:12:20 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:12:20 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:12:20 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:12:20 [INFO    ] yeetify: ------------------
+2026-05-12 20:12:20 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard
+2026-05-12 20:28:05 [INFO    ] yeetify: Unload Translator
+2026-05-12 20:28:09 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 20:28:09 [INFO    ] discord.client: logging in using static token
+2026-05-12 20:28:12 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded Translator
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded basic
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded effect
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded listeners
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded playlist
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded settings
+2026-05-12 20:28:12 [INFO    ] yeetify: Loaded task
+2026-05-12 20:28:12 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778642892.53
+2026-05-12 20:28:12 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 20:28:13 [INFO    ] yeetify: Auto-registered 45 slash commands globally.
+2026-05-12 20:28:13 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 20:28:13 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f2dedd8f71436b2550dbbcbbdd02794e).
+2026-05-12 20:28:15 [INFO    ] yeetify: Changed the bot status to the bops 🎵
+2026-05-12 20:28:15 [INFO    ] yeetify: ------------------
+2026-05-12 20:28:15 [INFO    ] yeetify: Logging As: Yeetify#4292
+2026-05-12 20:28:15 [INFO    ] yeetify: Bot ID: 1503943524456861726
+2026-05-12 20:28:15 [INFO    ] yeetify: Slash Commands: 45
+2026-05-12 20:28:15 [INFO    ] yeetify: ------------------
+2026-05-12 20:28:15 [INFO    ] yeetify: Yeetify Version: v2.7.3
+2026-05-12 20:28:15 [INFO    ] yeetify: Discord Version: 2.3.0a
+2026-05-12 20:28:15 [INFO    ] yeetify: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 20:28:15 [INFO    ] yeetify: ------------------
+2026-05-12 20:28:15 [INFO    ] yeetify: Yeetify — Based on Vocard by chocomeow — https://github.com/ChocoMeow/Vocard

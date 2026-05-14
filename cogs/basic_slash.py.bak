@@ -1,0 +1,641 @@
+"""MIT License
+
+Copyright (c) 2023 - present Encore
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
+import re
+import discord
+import voicelink
+
+from io import StringIO
+from validators import url
+from discord import app_commands
+from discord.ext import commands
+import function as func
+
+from voicelink import MongoDBHandler, LangHandler, Config
+from voicelink.views import SearchView, QueueView, LinkView, LyricsView, HelpView
+from voicelink.utils import format_ms, format_to_ms, truncate_string, dispatch_message, send_localized_message
+
+async def nowplay(interaction: discord.Interaction, player: voicelink.Player):
+    track = player.current
+    if not track:
+        return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+    embed.set_footer(text=f"Yeetify  •  Requested by {track.requester.display_name}", icon_url=interaction.client.user.display_avatar.url)
+
+    # Add Up Next section if there are tracks in queue
+    if queue_count > 0:
+        up_next_tracks = player.queue.tracks()[:3]
+        if up_next_tracks:
+            up_next_text = "\n".join(
+                f"`{i+1}.` [{truncate_string(track.title, 35)}]({track.uri}) · `{track.formatted_length}`"
+                for i, track in enumerate(up_next_tracks)
+            )
+            embed.description += f"\n\n─── Up Next ───────────────────\n{up_next_text}"
+
+    return await dispatch_message(interaction, embed, view=LinkView("Open in source", track.emoji, track.uri))
+
+class Basic(commands.Cog):
+    def __init__(self, bot: commands.Bot) -> None:
+        self.bot = bot
+        self.description = "This category is available to anyone on this server. Voting is required in certain commands."
+        self.ctx_menu = app_commands.ContextMenu(
+            name="play",
+            callback=self._play
+        )
+        self.bot.tree.add_command(self.ctx_menu)
+
+    async def cog_unload(self) -> None:
+        self.bot.tree.remove_command(self.ctx_menu.name, type=self.ctx_menu.type)
+
+    async def help_autocomplete(self, interaction: discord.Interaction, current: str) -> list:
+        return [app_commands.Choice(name=c.capitalize(), value=c) for c in self.bot.cogs if c not in ["Nodes", "Task"] and current in c]
+
+    async def play_autocomplete(self, interaction: discord.Interaction, current: str) -> list:
+        if voicelink.pool.URL_REGEX.match(current):
+            return []
+
+        if current:
+            node = voicelink.NodePool.get_node()
+            if not node:
+                return []
+            
+            tracks: list[voicelink.Track] = await node.get_tracks(current, requester=interaction.user)
+            if not tracks:
+                return []
+            
+            if isinstance(tracks, voicelink.Playlist):
+                tracks = tracks.tracks
+
+            return [app_commands.Choice(name=truncate_string(f"🎵 [{track.formatted_length}] {track.author} - {track.title}", 100), value=track.uri) for track in tracks]
+        
+        history = {track["identifier"]: track for track_id in reversed(await MongoDBHandler.get_user(interaction.user.id, d_type="history")) if (track := voicelink.Track.decode(track_id))["uri"]}
+        return [app_commands.Choice(name=truncate_string(f"🕒 [{format_ms(track['length'])}] {track['author']} - {track['title']}", 100), value=track['uri']) for track in history.values() if len(track['uri']) <= 100][:25]
+            
+    @app_commands.command(name="connect")
+    @app_commands.describe(channel="Provide a channel to connect.")
+    async def connect(self, interaction: discord.Interaction, channel: discord.VoiceChannel = None) -> None:
+        "Connect to a voice channel."
+        await interaction.response.defer()
+        try:
+            player = await voicelink.connect_channel(interaction, channel)
+        except discord.errors.ClientException:
+            return embed = success_embed("No suitable message for voice.connection.alreadyConnected")
+
+        await send_localized_message(interaction")
+        return await dispatch_message(interaction, embed)
+    @app_commands.describe(
+        query="Input a query or a searchable link.",
+        start="Specify a time you would like to start, e.g. 1:00",
+        end="Specify a time you would like to end, e.g. 4:00"
+    )
+    @app_commands.autocomplete(query=play_autocomplete)
+    async def play(self, interaction: discord.Interaction, query: str, start: str = "0", end: str = "0") -> None:
+        "Loads your input into the queue."
+        await interaction.response.defer()
+            
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            player = await voicelink.connect_channel(interaction)
+
+        if not player.is_user_join(interaction.user):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        if not tracks:
+            return embed = error_embed("No suitable message for player.errors.noTrackFound")
+
+        try:
+            if isinstance(tracks")
+        return await dispatch_message(interaction, embed)
+                embed = success_embed("No suitable message for player.playback.playlistLoad")
+        return await dispatch_message(interaction, embed)
+                texts = await LangHandler.get_lang(interaction.guild.id, "common.status.live", "player.playback.trackLoadPos", "player.playback.trackLoad")
+                stream_content = f"`{texts[0]}`" if tracks[0].is_stream else ""
+                additional_content = texts[1] if position >= 1 and player.is_playing else texts[2]
+
+                try:
+                    await dispatch_message(
+                        interaction,
+                        stream_content + additional_content,
+                        tracks[0].title, tracks[0].uri, tracks[0].author, tracks[0].formatted_length,
+                        position if position >= 1 and player.is_playing else None
+                    )
+                except Exception as e:
+                    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+        finally:
+            if not player.is_playing:
+                await player.do_next()
+    
+    async def _play(self, interaction: discord.Interaction, message: discord.Message):
+        query = ""
+
+        if message.content:
+            urls = re.findall(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", message.content)
+            if urls:
+                query = urls[0]
+
+        elif message.attachments:
+            query = message.attachments[0].url
+
+        if not query:
+            return embed = error_embed("No suitable message for player.errors.noPlaySource")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        if not tracks:
+            return embed = error_embed("No suitable message for player.errors.noTrackFound")
+
+        try:
+            if isinstance(tracks")
+        return await dispatch_message(interaction, embed)
+                texts = await LangHandler.get_lang(interaction.guild.id, "common.status.live", "player.playback.trackLoadPos", "player.playback.trackLoad")
+
+                stream_content = f"`{texts[0]}`" if tracks[0].is_stream else ""
+                additional_content = texts[1] if position >= 1 and player.is_playing else texts[2]
+
+                await dispatch_message(
+                    interaction,
+                    stream_content + additional_content,
+                    tracks[0].title, tracks[0].uri, tracks[0].author, tracks[0].formatted_length,
+                    position if position >= 1 and player.is_playing else None
+                )
+        finally:
+            if not player.is_playing:
+                await player.do_next()
+
+    @app_commands.command(name="search")
+    @app_commands.describe(
+        query="Input the name of the song.",
+        platform="Select the platform you want to search."
+    )
+    @app_commands.choices(platform=[
+        app_commands.Choice(name=search_type.display_name, value=search_type.name)
+        for search_type in voicelink.SearchType
+    ])
+    async def search(self, interaction: discord.Interaction, query: str, platform: str = None):
+        "Searches your query and displays the results."
+        await interaction.response.defer()
+            
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            player = await voicelink.connect_channel(interaction)
+
+        if not player.is_user_join(interaction.user):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = info_embed("Link sharing not supported.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        texts = await LangHandler.get_lang(interaction.guild.id, "search.title", "search.desc", "common.status.live", "player.playback.trackLoadPos", "player.playback.trackLoad", "search.wait", "search.success")
+        query_track = "\n".join(f"`{index}.` `[{track.formatted_length}]` **{track.title[:35]}**" for index, track in enumerate(tracks[0:10], start=1))
+        embed = discord.Embed(title=texts[0].format(query), description=texts[1].format(Config().get_source_config(search_type.display_name, "emoji"), search_type.display_name, len(tracks[0:10]), query_track), color=Config().embed_color)
+        view = SearchView(tracks=tracks[0:10], texts=[texts[5], texts[6]])
+        view.response = await dispatch_message(interaction, embed, view=view, ephemeral=True)
+
+        await view.wait()
+        if view.values is not None:
+            msg = ""
+            for value in view.values:
+                track = tracks[int(value.split(". ")[0]) - 1]
+                position = await player.add_track(track)
+                msg += (f"`{texts[2]}`" if track.is_stream else "") + (texts[3].format(track.title, track.uri, track.author, track.formatted_length, position) if position >= 1 else texts[4].format(track.title, track.uri, track.author, track.formatted_length))
+            await dispatch_message(interaction, msg)
+
+            if not player.is_playing:
+                await player.do_next()
+
+    @app_commands.command(name="playtop")
+    @app_commands.describe(
+        query="Input a query or a searchable link.",
+        start="Specify a time you would like to start, e.g. 1:00",
+        end="Specify a time you would like to end, e.g. 4:00"
+    )
+    @app_commands.autocomplete(query=play_autocomplete)
+    async def playtop(self, interaction: discord.Interaction, query: str, start: str = "0", end: str = "0"):
+        "Adds a song with the given url or query on the top of the queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            player = await voicelink.connect_channel(interaction)
+
+        if not player.is_user_join(interaction.user):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        if not tracks:
+            return embed = error_embed("No suitable message for player.errors.noTrackFound")
+        
+        try:
+            if isinstance(tracks")
+        return await dispatch_message(interaction, embed)
+                embed = success_embed("No suitable message for player.playback.playlistLoad")
+        return await dispatch_message(interaction, embed), at_front=True)
+                texts = await LangHandler.get_lang(interaction.guild.id, "common.status.live", "player.playback.trackLoadPos", "player.playback.trackLoad")
+
+                stream_content = f"`{texts[0]}`" if tracks[0].is_stream else ""
+                additional_content = texts[1] if position >= 1 and player.is_playing else texts[2]
+
+                await dispatch_message(
+                    interaction,
+                    stream_content + additional_content,
+                    tracks[0].title, tracks[0].uri, tracks[0].author, tracks[0].formatted_length,
+                    position if position >= 1 and player.is_playing else None
+                )
+        finally:
+            if not player.is_playing:
+                await player.do_next()
+
+    @app_commands.command(name="forceplay")
+    @app_commands.describe(
+        query="Input a query or a searchable link.",
+        start="Specify a time you would like to start, e.g. 1:00",
+        end="Specify a time you would like to end, e.g. 4:00"
+    )
+    async def forceplay(self, interaction: discord.Interaction, query: str, start: str = "0", end: str = "0"):
+        "Enforce playback using the given URL or query."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            player = await voicelink.connect_channel(interaction)
+
+        if not player.is_privileged(interaction.user):
+            return embed = error_embed("Missing required permissions.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                index = await player.add_track(tracks.tracks, start_time=format_to_ms(start), end_time=format_to_ms(end), at_front=True)
+                embed = success_embed("No suitable message for player.playback.playlistLoad")
+        return await dispatch_message(interaction, embed)
+                await player.add_track(tracks[0], start_time=format_to_ms(start), end_time=format_to_ms(end), at_front=True)
+
+                stream_content = f"`{texts[0]}`" if tracks[0].is_stream else ""
+
+                await dispatch_message(
+                    interaction,
+                    stream_content + texts[1],
+                    tracks[0].title, tracks[0].uri, tracks[0].author, tracks[0].formatted_length,
+                )
+        finally:
+            if player.queue._repeat.mode == voicelink.LoopType.TRACK:
+                await player.set_repeat(voicelink.LoopType.OFF)
+                
+            await player.stop() if player.is_playing else await player.do_next()
+
+    @app_commands.command(name="pause")
+    async def pause(self, interaction: discord.Interaction):
+        "Pause the music."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            if interaction.user in player.pause_votes:
+                return embed = info_embed("Vote already cast.")
+        return await dispatch_message(interaction, embed, ephemeral=True), required)
+
+        await player.set_pause(True, interaction.user)
+        embed = success_embed("Paused the player.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        if not player.is_paused:
+            return embed = success_embed("No suitable message for player.controls.resume.error")
+
+        if not player.is_privileged(interaction.user):
+            if interaction.user in player.resume_votes:
+                return await send_localized_message(interaction")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                return embed = success_embed("No suitable message for player.controls.resume.vote")
+        return await dispatch_message(interaction, embed)
+        embed = success_embed("Resumed the player.")
+        return await dispatch_message(interaction, embed)
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            if interaction.user == player.current.requester:
+                pass
+            elif interaction.user in player.skip_votes:
+                return embed = info_embed("Vote already cast.")
+        return await dispatch_message(interaction, embed, ephemeral=True), required)
+
+        if index:
+            player.queue.skipto(index)
+
+        embed = success_embed("Skipped the current track.")
+        return await dispatch_message(interaction, embed)
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                return embed = success_embed("No suitable message for player.controls.back.vote")
+        return await dispatch_message(interaction, embed)
+
+        embed = success_embed("Went back to the previous track.")
+        return await dispatch_message(interaction, embed)
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        if not player.current or player.position == 0:
+            return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        embed = success_embed("No suitable message for player.controls.seek")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        view = QueueView(player=player, author=interaction.user)
+        view.response = await dispatch_message(interaction, await view.build_embed(), view=view)
+
+    @app_commands.command(name="queue_export")
+    async def queue_export(self, interaction: discord.Interaction):
+        "Exports the entire queue to a text file"
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        
+        if player.queue.is_empty and not player.current:
+            return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                raw += ","
+            total_length += track.length
+
+        temp = "!Remember do not change this file!\n------------->Info<-------------\nGuild: {} ({})\nRequester: {} ({})\nTracks: {} - {}\n------------>Tracks<------------\n".format(
+            interaction.guild.name, interaction.guild.id,
+            interaction.user.display_name, interaction.user.id,
+            len(tracks), format_ms(total_length)
+        ) + temp
+        temp += raw
+
+        await interaction.followup.send(content="", file=discord.File(StringIO(temp), filename=f"{interaction.guild.id}_Full_Queue.txt"))
+
+    @app_commands.command(name="queue_import")
+    async def queue_import(self, interaction: discord.Interaction, attachment: discord.Attachment):
+        "Imports the text file and adds the track to the current queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            player = await voicelink.connect_channel(interaction)
+
+        if not player.is_user_join(interaction.user):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True).split(",")
+            
+            tracks = [voicelink.Track(track_id=track_id, info=voicelink.Track.decode(track_id), requester=interaction.user) for track_id in track_ids]
+            if not tracks:
+                return embed = error_embed("No suitable message for player.errors.noTrackFound")
+
+            index = await player.add_track(tracks)
+            await send_localized_message(interaction")
+        return await dispatch_message(interaction, embed)
+    async def history(self, interaction: discord.Interaction):
+        "Display the players queue songs in your history queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        view = QueueView(player=player, author=interaction.user, is_queue=False)
+        view.response = await dispatch_message(interaction, await view.build_embed(), view=view)
+
+    @app_commands.command(name="leave")
+    async def leave(self, interaction: discord.Interaction):
+        "Disconnects the bot from your voice channel and clears the queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                    pass
+                else:
+                    return embed = info_embed("No suitable message for player.controls.leave.vote")
+        return await dispatch_message(interaction, embed)
+
+        embed = success_embed("No suitable message for player.controls.leave.success")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True), value=loop_type.name)
+        for loop_type in voicelink.LoopType
+    ])
+    async def loop(self, interaction: discord.Interaction, mode: str):
+        "Changes Loop mode."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        embed = success_embed("Changed repeat mode.")
+        return await dispatch_message(interaction, embed),
+        app_commands.Choice(name='History', value='history')
+    ])
+    async def clear(self, interaction: discord.Interaction, queue: str = "queue"):
+        "Remove all the tracks in your queue or history queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        embed = success_embed("Cleared the queue.")
+        return await dispatch_message(interaction, embed)
+    @app_commands.describe(
+        position1="Input a position from the queue to be removed.",
+        position2="Set the range of the queue to be removed.",
+        member="Remove tracks requested by a specific member."
+    )
+    async def remove(self, interaction: discord.Interaction, position1: int, position2: int = None, member: discord.Member = None):
+        "Removes specified track or a range of tracks from the queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        removed_tracks = await player.remove_track(position1, position2, remove_target=member, requester=interaction.user)
+        embed = success_embed("Removed tracks from the queue.")
+        return await dispatch_message(interaction, embed)
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        if not player.current:
+            return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        embed = success_embed("No suitable message for player.controls.forward")
+        return await dispatch_message(interaction, embed)
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        if not player.current:
+            return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        embed = success_embed("No suitable message for player.controls.rewind")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("Invalid position specified.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+    async def shuffle(self, interaction: discord.Interaction):
+        "Randomizes the tracks in the queue."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+                return embed = success_embed("No suitable message for player.controls.shuffle.vote")
+        return await dispatch_message(interaction, embed)
+        embed = success_embed("No suitable message for player.controls.shuffle.success")
+
+    @app_commands.command(name="swap")
+        return await dispatch_message(interaction, embed)
+    @app_commands.describe(
+        position1="The track to swap. Example: 2",
+        position2="The track to swap with position1. Example: 1"
+    )
+    async def swap(self, interaction: discord.Interaction, position1: int, position2: int):
+        "Swaps the specified song to the specified song."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        track1, track2 = await player.swap_track(position1, position2, interaction.user)        
+        embed = success_embed("Swapped tracks in the queue.")
+        return await dispatch_message(interaction, embed)
+    @app_commands.describe(
+        target="The track to move. Example: 2",
+        to="The new position to move the track to. Example: 1"
+    )
+    async def move(self, interaction: discord.Interaction, target: int, to: int):
+        "Moves the specified song to the specified position."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        moved_track = await player.move_track(target, to, interaction.user)
+        embed = success_embed("Moved track in the queue.")
+        return await dispatch_message(interaction, embed)
+    async def lyrics(self, interaction: discord.Interaction, title: str = "", artist: str = ""):
+        "Displays lyrics for the playing track."
+        await interaction.response.defer()
+        
+        if not title:
+            player: voicelink.Player = interaction.guild.voice_client
+            if not player or not player.is_playing:
+                return embed = error_embed("No track is currently playing.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+            
+            view = LyricsView(name=title, source={_: re.findall(r'.*\n(?:.*\n){,22}', v or "") for _, v in lyrics.items()}, author=interaction.user)
+            view.response = await dispatch_message(interaction, await view.build_embed(), view=view)
+
+    @app_commands.command(name="swapdj")
+    @app_commands.describe(member="Choose a member to transfer the dj role.")
+    async def swapdj(self, interaction: discord.Interaction, member: discord.Member):
+        "Transfer dj to another."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = error_embed("No suitable message for voice.connection.notInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True):
+            return embed = info_embed("DJ permissions required.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+
+        if member not in player.channel.members:
+            return embed = info_embed("No suitable message for permissions.djNotInChannel")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+    async def autoplay(self, interaction: discord.Interaction):
+        "Toggles autoplay mode, it will automatically queue the best songs to play."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+        if not player:
+            return embed = error_embed("No active player found.")
+        return await dispatch_message(interaction, embed, ephemeral=True)
+        player.settings['autoplay'] = check
+        embed = info_embed("No suitable message for player.controls.autoplay")
+        return await dispatch_message(interaction, embed)
+    async def help(self, interaction: discord.Interaction, category: str = "News") -> None:
+        "Lists all the commands in Yeetify."
+        await interaction.response.defer()
+        
+        if category not in self.bot.cogs:
+            category = "News"
+        view = HelpView(self.bot, interaction.user)
+        embed = view.build_embed(category)
+        view.response = await dispatch_message(interaction, embed, view=view)
+
+    @app_commands.command(name="ping")
+    async def ping(self, interaction: discord.Interaction):
+        "Test if the bot is alive, and see the delay between your commands and my response."
+        await interaction.response.defer()
+        
+        player: voicelink.Player = interaction.guild.voice_client
+
+        value = await LangHandler.get_lang(interaction.guild.id, "ping.title1", "ping.field1", "ping.title2", "ping.field2")
+        
+        embed = discord.Embed(color=Config().embed_color)
+        embed.add_field(
+            name=value[0],
+            value=value[1].format(
+                "0", "0", self.bot.latency, '😭' if self.bot.latency > 5 else ('😨' if self.bot.latency > 1 else '👌'), "St Louis, MO, United States"
+        ))
+
+        if player:
+            embed.add_field(
+                name=value[2],
+                value=value[3].format(
+                    player.node._identifier, player.ping, player.node.player_count, player.channel.rtc_region),
+                    inline=False
+            )
+
+        await dispatch_message(interaction, embed)
+
+async def setup(bot: commands.Bot) -> None:
+    await bot.add_cog(Basic(bot))

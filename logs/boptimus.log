@@ -1,0 +1,2058 @@
+2026-05-11 18:41:00 [INFO    ] discord.client: logging in using static token
+2026-05-11 18:41:02 [INFO    ] vocard.db: MongoDB databases initialized: AxonX
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded Translator
+2026-05-11 18:41:02 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 29, in <module>
+    from validators import url
+ModuleNotFoundError: No module named 'validators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 119, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: ModuleNotFoundError: No module named 'validators'
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded effect
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded listeners
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded playlist
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded settings
+2026-05-11 18:41:02 [INFO    ] boptimus: Loaded task
+2026-05-11 18:41:02 [INFO    ] vocard.db: Starting cache cleanup at timestamp: 1778550062.79
+2026-05-11 18:41:02 [INFO    ] vocard.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 18:41:03 [WARNING ] boptimus: Missing translation for "permission, Grant or revoke permissions for a playlist., The user to grant or revoke permissions for., The permission type: read, write, or remove., read, write, action, Whether to grant or revoke the permission., grant, revoke, Toggle Boptimus to prevent duplicate songs from queuing., setting, Which setting to restore to defaults., Prefix, Language, Dj role, Queue mode, 24/7 mode, Vote bypass, Default volume, Music controller, Duplicate tracks, Controller messages, Silent messages, Stage announce template, Song request channel, Custom controller embeds" in "ZH-CN"
+2026-05-11 18:41:03 [WARNING ] boptimus: Missing translation for "permission, Grant or revoke permissions for a playlist., The user to grant or revoke permissions for., The permission type: read, write, or remove., read, write, action, Whether to grant or revoke the permission., grant, revoke, Toggle Boptimus to prevent duplicate songs from queuing., setting, Which setting to restore to defaults., Prefix, Language, Dj role, Queue mode, 24/7 mode, Vote bypass, Default volume, Music controller, Duplicate tracks, Controller messages, Silent messages, Stage announce template, Song request channel, Custom controller embeds" in "ZH-TW"
+2026-05-11 18:41:03 [WARNING ] boptimus: Missing translation for "permission, Grant or revoke permissions for a playlist., The user to grant or revoke permissions for., The permission type: read, write, or remove., read, write, action, Whether to grant or revoke the permission., grant, revoke, Toggle Boptimus to prevent duplicate songs from queuing., setting, Which setting to restore to defaults., Prefix, Language, Dj role, Queue mode, 24/7 mode, Vote bypass, Default volume, Music controller, Duplicate tracks, Controller messages, Silent messages, Stage announce template, Song request channel, Custom controller embeds" in "ES-ES"
+2026-05-11 18:41:04 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fa3a3a573099efac3c891682aa631b62).
+2026-05-11 18:41:05 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The connection to node 'DEFAULT' failed.
+2026-05-11 18:41:06 [INFO    ] boptimus: ------------------
+2026-05-11 18:41:06 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 18:41:06 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 18:41:06 [INFO    ] boptimus: ------------------
+2026-05-11 18:41:06 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 18:41:06 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 18:41:06 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 18:41:06 [INFO    ] boptimus: ------------------
+2026-05-11 18:42:47 [INFO    ] boptimus: Unload Translator
+2026-05-11 18:42:53 [INFO    ] discord.client: logging in using static token
+2026-05-11 18:42:58 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded Translator
+2026-05-11 18:42:58 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 29, in <module>
+    from validators import url
+ModuleNotFoundError: No module named 'validators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 119, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: ModuleNotFoundError: No module named 'validators'
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded effect
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded listeners
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded playlist
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded settings
+2026-05-11 18:42:58 [INFO    ] boptimus: Loaded task
+2026-05-11 18:42:58 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778550178.16
+2026-05-11 18:42:58 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 18:42:58 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d4c26238522fd9df645897a0b6ff651e).
+2026-05-11 18:43:00 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The connection to node 'DEFAULT' failed.
+2026-05-11 18:43:00 [INFO    ] boptimus: ------------------
+2026-05-11 18:43:00 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 18:43:00 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 18:43:00 [INFO    ] boptimus: ------------------
+2026-05-11 18:43:00 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 18:43:00 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 18:43:00 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 18:43:00 [INFO    ] boptimus: ------------------
+2026-05-11 19:00:51 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session d4c26238522fd9df645897a0b6ff651e.
+2026-05-11 19:17:20 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:17:23 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:17:23 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 29, in <module>
+    from validators import url
+ModuleNotFoundError: No module named 'validators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 121, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: ModuleNotFoundError: No module named 'validators'
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:17:23 [INFO    ] boptimus: Loaded task
+2026-05-11 19:17:23 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778552243.32
+2026-05-11 19:17:23 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:17:24 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 72dad33b7fe178b02bb7fc0f7336c0d1).
+2026-05-11 19:17:26 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The connection to node 'DEFAULT' failed.
+2026-05-11 19:17:26 [INFO    ] boptimus: ------------------
+2026-05-11 19:17:26 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:17:26 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:17:26 [INFO    ] boptimus: ------------------
+2026-05-11 19:17:26 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:17:26 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:17:26 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:17:26 [INFO    ] boptimus: ------------------
+2026-05-11 19:18:12 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:18:15 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:18:15 [INFO    ] boptimus: Loaded task
+2026-05-11 19:18:15 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778552295.16
+2026-05-11 19:18:15 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:18:15 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f9c939fc69ba6fd9992a19e7c5a714db).
+2026-05-11 19:18:17 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The connection to node 'DEFAULT' failed.
+2026-05-11 19:18:17 [INFO    ] boptimus: ------------------
+2026-05-11 19:18:17 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:18:17 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:18:17 [INFO    ] boptimus: ------------------
+2026-05-11 19:18:17 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:18:17 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:18:17 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:18:17 [INFO    ] boptimus: ------------------
+2026-05-11 19:20:50 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:20:52 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:20:52 [INFO    ] boptimus: Loaded task
+2026-05-11 19:20:52 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778552452.86
+2026-05-11 19:20:52 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:20:53 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6080ede244ba3e707af5afbad6c2ec21).
+2026-05-11 19:20:55 [INFO    ] boptimus: ------------------
+2026-05-11 19:20:55 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:20:55 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:20:55 [INFO    ] boptimus: ------------------
+2026-05-11 19:20:55 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:20:55 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:20:55 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:20:55 [INFO    ] boptimus: ------------------
+2026-05-11 19:20:56 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The connection to node 'DEFAULT' failed.
+2026-05-11 19:21:22 [INFO    ] boptimus: [DEBUG] on_message received: '?play birthday sex' from 0phc#0
+2026-05-11 19:21:23 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:22:12 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:22:16 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:22:19 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:22:19 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:22:19 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:22:20 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:22:20 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:22:20 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:22:20 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:22:20 [INFO    ] boptimus: Loaded task
+2026-05-11 19:22:20 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778552540.03
+2026-05-11 19:22:20 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:22:20 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 247c685d192efd91b8ebb903fbb37dde).
+2026-05-11 19:22:21 [ERROR   ] boptimus: Node DEFAULT is not able to connect! - Reason: The password for node 'DEFAULT' is invalid.
+2026-05-11 19:22:22 [INFO    ] boptimus: ------------------
+2026-05-11 19:22:22 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:22:22 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:22:22 [INFO    ] boptimus: ------------------
+2026-05-11 19:22:22 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:22:22 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:22:22 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:22:22 [INFO    ] boptimus: ------------------
+2026-05-11 19:22:33 [INFO    ] boptimus: [DEBUG] on_message received: '?play birthday sex' from 0phc#0
+2026-05-11 19:22:34 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:23:48 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:23:53 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:23:56 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:23:56 [INFO    ] boptimus: Loaded task
+2026-05-11 19:23:56 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778552636.39
+2026-05-11 19:23:56 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:23:57 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:23:57 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5236b24f42cd62ff87e0390871c828a0).
+2026-05-11 19:23:59 [INFO    ] boptimus: ------------------
+2026-05-11 19:23:59 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:23:59 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:23:59 [INFO    ] boptimus: ------------------
+2026-05-11 19:23:59 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:23:59 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:23:59 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:23:59 [INFO    ] boptimus: ------------------
+2026-05-11 19:24:07 [INFO    ] boptimus: [DEBUG] on_message received: '?play birthday sex' from 0phc#0
+2026-05-11 19:24:07 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:24:09 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 152, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:24:10 [ERROR   ] boptimus: An unexpected error occurred in the play command on the Encore Development(1503570841642860554).
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 229, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 152, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 1023, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 238, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'
+2026-05-11 19:27:55 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:33:19 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:33:27 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:33:29 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:33:29 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:33:29 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:33:29 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:33:29 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:33:29 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:33:30 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:33:30 [INFO    ] boptimus: Loaded task
+2026-05-11 19:33:30 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778553210.02
+2026-05-11 19:33:30 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:33:30 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:33:30 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fe037abda0983a8be129bb757b72762d).
+2026-05-11 19:33:32 [INFO    ] boptimus: ------------------
+2026-05-11 19:33:32 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:33:32 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:33:32 [INFO    ] boptimus: ------------------
+2026-05-11 19:33:32 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:33:32 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:33:32 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:33:32 [INFO    ] boptimus: ------------------
+2026-05-11 19:33:59 [INFO    ] boptimus: [DEBUG] on_message received: '?play glock in my lap' from 0phc#0
+2026-05-11 19:33:59 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:34:01 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 153, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 160, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:34:01 [ERROR   ] boptimus: An unexpected error occurred in the play command on the Encore Development(1503570841642860554).
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 153, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 229, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 160, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 1023, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 238, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'func' is not defined
+2026-05-11 19:37:20 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:38:54 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:38:58 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:39:01 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:39:01 [INFO    ] boptimus: Loaded task
+2026-05-11 19:39:01 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778553541.29
+2026-05-11 19:39:01 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:39:01 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:39:02 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7b23887e78a356157a5af148e15a4614).
+2026-05-11 19:39:04 [INFO    ] boptimus: ------------------
+2026-05-11 19:39:04 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:39:04 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:39:04 [INFO    ] boptimus: ------------------
+2026-05-11 19:39:04 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:39:04 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:39:04 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:39:04 [INFO    ] boptimus: ------------------
+2026-05-11 19:39:33 [INFO    ] boptimus: [DEBUG] on_message received: '?play whoa re you sage faye' from 0phc#0
+2026-05-11 19:39:33 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:39:35 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 150, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 157, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:39:35 [ERROR   ] boptimus: An unexpected error occurred in the play command on the Encore Development(1503570841642860554).
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 150, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 229, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 157, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 1023, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 238, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'func' is not defined
+2026-05-11 19:41:31 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:41:37 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:41:39 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:41:39 [INFO    ] boptimus: Loaded task
+2026-05-11 19:41:39 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778553699.91
+2026-05-11 19:41:39 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:41:40 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:41:42 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: cc61895dc7866c4cf1be3e72da1d5102).
+2026-05-11 19:41:44 [INFO    ] boptimus: ------------------
+2026-05-11 19:41:44 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:41:44 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:41:44 [INFO    ] boptimus: ------------------
+2026-05-11 19:41:44 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:41:44 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:41:44 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:41:44 [INFO    ] boptimus: ------------------
+2026-05-11 19:41:58 [INFO    ] boptimus: [DEBUG] on_message received: '?play glock in my lap' from 0phc#0
+2026-05-11 19:41:58 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:42:00 [ERROR   ] Encore: Something went wrong while sending music controller to Encore Development(1503570841642860554)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 150, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 157, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 474, in invoke_controller
+    self.controller = await dispatch_message(self.context, content=embed, view=view, delete_after=None, requires_fetch=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+2026-05-11 19:42:00 [ERROR   ] boptimus: An unexpected error occurred in the play command on the Encore Development(1503570841642860554).
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 150, in play
+    await dispatch_message(
+    ...<4 lines>...
+    )
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\utils.py", line 366, in dispatch_message
+    if isinstance(message, discord.InteractionCallbackResponse):
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord' has no attribute 'InteractionCallbackResponse'. Did you mean: 'InteractionResponse'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 229, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 157, in play
+    func.logger.error(f"Error dispatching message in play command: {e}", exc_info=e)
+    ^^^^
+NameError: name 'func' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 1023, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\core.py", line 238, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'func' is not defined
+2026-05-11 19:45:17 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:45:23 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:45:25 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:45:25 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:45:26 [INFO    ] boptimus: Loaded task
+2026-05-11 19:45:26 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778553926.05
+2026-05-11 19:45:26 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:45:26 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:45:26 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c2568a4634cebf83e053cce2b287d9b3).
+2026-05-11 19:45:28 [INFO    ] boptimus: ------------------
+2026-05-11 19:45:28 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:45:28 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:45:28 [INFO    ] boptimus: ------------------
+2026-05-11 19:45:28 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:45:28 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:45:28 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:45:28 [INFO    ] boptimus: ------------------
+2026-05-11 19:45:36 [INFO    ] boptimus: [DEBUG] on_message received: '?play glock in my lap' from 0phc#0
+2026-05-11 19:45:36 [INFO    ] boptimus: [DEBUG] get_prefix called — returning: '?'
+2026-05-11 19:51:22 [INFO    ] boptimus: Unload Translator
+2026-05-11 19:51:27 [INFO    ] discord.client: logging in using static token
+2026-05-11 19:51:30 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded Translator
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded basic
+2026-05-11 19:51:30 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 947, in _load_from_module_spec
+    await setup(self)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 896, in setup
+    await bot.add_cog(Basic(bot))
+                      ~~~~~^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 70, in __init__
+    self.bot.tree.add_command(self.ctx_menu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 335, in add_command
+    _context_menu_add_helper(None, self._context_menus)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 324, in _context_menu_add_helper
+    raise CommandAlreadyRegistered(name, guild_id)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'play' already registered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 952, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: CommandAlreadyRegistered: Command 'play' already registered.
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded effect
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded listeners
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded playlist
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded settings
+2026-05-11 19:51:30 [INFO    ] boptimus: Loaded task
+2026-05-11 19:51:30 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778554290.41
+2026-05-11 19:51:30 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 19:51:30 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 19:51:31 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8a69c0b15a8d2d8ae718a32c3b9392f2).
+2026-05-11 19:51:33 [INFO    ] boptimus: ------------------
+2026-05-11 19:51:33 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 19:51:33 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 19:51:33 [INFO    ] boptimus: ------------------
+2026-05-11 19:51:33 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 19:51:33 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 19:51:33 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 19:51:33 [INFO    ] boptimus: ------------------
+2026-05-11 19:51:44 [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1200, in get_prefix
+    ret = list(ret)  # type: ignore
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1395, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1390, in process_commands
+    ctx = await self.get_context(message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1289, in get_context
+    prefix = await self.get_prefix(origin)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1207, in get_prefix
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: command_prefix must be plain string, iterable of strings, or callable returning either of these, not NoneType
+2026-05-11 20:33:35 [INFO    ] boptimus: Unload Translator
+2026-05-11 20:33:40 [INFO    ] discord.client: logging in using static token
+2026-05-11 20:33:43 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded Translator
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded basic
+2026-05-11 20:33:43 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 947, in _load_from_module_spec
+    await setup(self)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 896, in setup
+    await bot.add_cog(Basic(bot))
+                      ~~~~~^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 70, in __init__
+    self.bot.tree.add_command(self.ctx_menu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 335, in add_command
+    _context_menu_add_helper(None, self._context_menus)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 324, in _context_menu_add_helper
+    raise CommandAlreadyRegistered(name, guild_id)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'play' already registered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 952, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: CommandAlreadyRegistered: Command 'play' already registered.
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded effect
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded listeners
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded playlist
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded settings
+2026-05-11 20:33:43 [INFO    ] boptimus: Loaded task
+2026-05-11 20:33:43 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778556823.77
+2026-05-11 20:33:43 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 20:33:44 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 20:33:44 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4e5f5efe48b0b337fb94140030f0d7c3).
+2026-05-11 20:33:46 [INFO    ] boptimus: ------------------
+2026-05-11 20:33:46 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 20:33:46 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 20:33:46 [INFO    ] boptimus: ------------------
+2026-05-11 20:33:46 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 20:33:46 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 20:33:46 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 20:33:46 [INFO    ] boptimus: ------------------
+2026-05-11 20:34:01 [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1200, in get_prefix
+    ret = list(ret)  # type: ignore
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1395, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1390, in process_commands
+    ctx = await self.get_context(message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1289, in get_context
+    prefix = await self.get_prefix(origin)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1207, in get_prefix
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: command_prefix must be plain string, iterable of strings, or callable returning either of these, not NoneType
+2026-05-11 20:34:16 [ERROR   ] discord.client: Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1200, in get_prefix
+    ret = list(ret)  # type: ignore
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1395, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1390, in process_commands
+    ctx = await self.get_context(message)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1289, in get_context
+    prefix = await self.get_prefix(origin)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1207, in get_prefix
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: command_prefix must be plain string, iterable of strings, or callable returning either of these, not NoneType
+2026-05-11 20:35:34 [INFO    ] boptimus: Unload Translator
+2026-05-11 20:36:40 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 20:36:40 [INFO    ] discord.client: logging in using static token
+2026-05-11 20:36:42 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded Translator
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded basic
+2026-05-11 20:36:42 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 947, in _load_from_module_spec
+    await setup(self)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 896, in setup
+    await bot.add_cog(Basic(bot))
+                      ~~~~~^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 70, in __init__
+    self.bot.tree.add_command(self.ctx_menu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 335, in add_command
+    _context_menu_add_helper(None, self._context_menus)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 324, in _context_menu_add_helper
+    raise CommandAlreadyRegistered(name, guild_id)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'play' already registered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 952, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: CommandAlreadyRegistered: Command 'play' already registered.
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded effect
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded listeners
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded playlist
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded settings
+2026-05-11 20:36:42 [INFO    ] boptimus: Loaded task
+2026-05-11 20:36:42 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778557002.75
+2026-05-11 20:36:42 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 20:36:43 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 20:36:43 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 329a33cc1ebc1ee793db17a3bc6662be).
+2026-05-11 20:36:45 [INFO    ] boptimus: ------------------
+2026-05-11 20:36:45 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 20:36:45 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 20:36:45 [INFO    ] boptimus: ------------------
+2026-05-11 20:36:45 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 20:36:45 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 20:36:45 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 20:36:45 [INFO    ] boptimus: ------------------
+2026-05-11 20:52:07 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 329a33cc1ebc1ee793db17a3bc6662be.
+2026-05-11 22:05:30 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:05:30 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:05:32 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:05:32 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:05:32 [INFO    ] boptimus: Loaded basic
+2026-05-11 22:05:32 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 947, in _load_from_module_spec
+    await setup(self)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 896, in setup
+    await bot.add_cog(Basic(bot))
+                      ~~~~~^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 70, in __init__
+    self.bot.tree.add_command(self.ctx_menu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 335, in add_command
+    _context_menu_add_helper(None, self._context_menus)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 324, in _context_menu_add_helper
+    raise CommandAlreadyRegistered(name, guild_id)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'play' already registered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 952, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: CommandAlreadyRegistered: Command 'play' already registered.
+2026-05-11 22:05:32 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\effect.py", line 46, in <module>
+    class Effect(commands.Cog):
+    ...<170 lines>...
+            await send_localized_message(interaction, "effects.cleared")
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\effect.py", line 59, in Effect
+    @app_commands.command(name="speed")
+     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 2002, in decorator
+    return Command(
+        name=name if name is not MISSING else func.__name__,
+    ...<5 lines>...
+        extras=extras,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 665, in __init__
+    self._params: Dict[str, CommandParameter] = _extract_parameters_from_callback(callback, callback.__globals__)
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 373, in _extract_parameters_from_callback
+    param = annotation_to_parameter(resolved, parameter)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\transformers.py", line 834, in annotation_to_parameter
+    (inner, default, validate_default) = get_supported_annotation(annotation)
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\transformers.py", line 793, in get_supported_annotation
+    raise TypeError(f'unsupported type annotation {annotation!r}')
+TypeError: unsupported type annotation Range[float, 0.0, 2.0]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.effect' raised an error: TypeError: unsupported type annotation Range[float, 0.0, 2.0]
+2026-05-11 22:05:32 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:05:33 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 265, in <module>
+    class Playlists(commands.Cog, name="playlist"):
+    ...<450 lines>...
+                raise e
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 277, in Playlists
+    @app_commands.group(name="playlist")
+     ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord.app_commands' has no attribute 'group'. Did you mean: 'Group'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: AttributeError: module 'discord.app_commands' has no attribute 'group'
+2026-05-11 22:05:33 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 56, in <module>
+    class Settings(commands.Cog, name="settings"):
+    ...<300 lines>...
+            await interaction.response.send_message(embed=embed, view=DebugView(self.bot), ephemeral=True)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 61, in Settings
+    @app_commands.group(name="settings")
+     ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord.app_commands' has no attribute 'group'. Did you mean: 'Group'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: AttributeError: module 'discord.app_commands' has no attribute 'group'
+2026-05-11 22:05:33 [INFO    ] boptimus: Loaded task
+2026-05-11 22:05:33 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778562333.09
+2026-05-11 22:05:33 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:05:33 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:05:33 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 62790698864efbb3fb8e3d9ad0f39010).
+2026-05-11 22:05:35 [INFO    ] boptimus: ------------------
+2026-05-11 22:05:35 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:05:35 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:05:35 [INFO    ] boptimus: ------------------
+2026-05-11 22:05:35 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:05:35 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:05:35 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:05:35 [INFO    ] boptimus: ------------------
+2026-05-11 22:09:51 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:09:51 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:09:53 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:09:53 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:09:53 [INFO    ] boptimus: Loaded basic_slash
+2026-05-11 22:09:53 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:09:53 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:09:53 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 265, in <module>
+    class Playlists(commands.Cog, name="playlist"):
+    ...<453 lines>...
+                raise e
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 280, in Playlists
+    @app_commands.group(name="playlist")
+     ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'discord.app_commands' has no attribute 'group'. Did you mean: 'Group'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: AttributeError: module 'discord.app_commands' has no attribute 'group'
+2026-05-11 22:09:54 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 56, in <module>
+    class Settings(commands.Cog, name="settings"):
+    ...<301 lines>...
+            await interaction.response.send_message(embed=embed, view=DebugView(self.bot), ephemeral=True)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 68, in Settings
+    @self.settings.command(name="prefix")
+     ^^^^
+NameError: name 'self' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: NameError: name 'self' is not defined
+2026-05-11 22:09:54 [INFO    ] boptimus: Loaded task
+2026-05-11 22:09:54 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778562594.04
+2026-05-11 22:09:54 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:09:54 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:09:54 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 539c97c448cf6db19e51c30ead90ac46).
+2026-05-11 22:09:56 [INFO    ] boptimus: ------------------
+2026-05-11 22:09:56 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:09:56 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:09:56 [INFO    ] boptimus: ------------------
+2026-05-11 22:09:56 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:09:56 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:09:56 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:09:56 [INFO    ] boptimus: ------------------
+2026-05-11 22:11:33 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:11:33 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:11:35 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:11:35 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded basic_slash
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded playlist
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded settings
+2026-05-11 22:11:36 [INFO    ] boptimus: Loaded task
+2026-05-11 22:11:36 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778562696.10
+2026-05-11 22:11:36 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:11:36 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:11:36 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 932f30a8cf590258d57e976d3fc954e1).
+2026-05-11 22:11:38 [INFO    ] boptimus: ------------------
+2026-05-11 22:11:38 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:11:38 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:11:38 [INFO    ] boptimus: ------------------
+2026-05-11 22:11:38 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:11:38 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:11:38 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:11:38 [INFO    ] boptimus: ------------------
+2026-05-11 22:14:54 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:14:54 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:15:02 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:15:02 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:15:05 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded basic_slash
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded playlist
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded settings
+2026-05-11 22:15:05 [INFO    ] boptimus: Loaded task
+2026-05-11 22:15:05 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778562905.41
+2026-05-11 22:15:05 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:15:05 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:15:06 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f32ef49d94cd969bad6a9764e6468336).
+2026-05-11 22:15:08 [INFO    ] boptimus: ------------------
+2026-05-11 22:15:08 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:15:08 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:15:08 [INFO    ] boptimus: ------------------
+2026-05-11 22:15:08 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:15:08 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:15:08 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:15:08 [INFO    ] boptimus: ------------------
+2026-05-11 22:24:54 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:24:54 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:24:56 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded basic_slash
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded playlist
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded settings
+2026-05-11 22:24:56 [INFO    ] boptimus: Loaded task
+2026-05-11 22:24:56 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778563496.92
+2026-05-11 22:24:56 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:24:57 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2304a26b2a94e906a91c829e82781e4b).
+2026-05-11 22:24:57 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:24:59 [INFO    ] boptimus: ------------------
+2026-05-11 22:24:59 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:24:59 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:24:59 [INFO    ] boptimus: ------------------
+2026-05-11 22:24:59 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:24:59 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:24:59 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:24:59 [INFO    ] boptimus: ------------------
+2026-05-11 22:26:02 [INFO    ] boptimus: Unload Translator
+2026-05-11 22:26:08 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:26:08 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:26:10 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded basic_slash
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded playlist
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded settings
+2026-05-11 22:26:10 [INFO    ] boptimus: Loaded task
+2026-05-11 22:26:10 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778563570.86
+2026-05-11 22:26:10 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:26:11 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:26:11 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 99fa5513a4317c233d39fdc0ac66a760).
+2026-05-11 22:26:13 [INFO    ] boptimus: ------------------
+2026-05-11 22:26:13 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:26:13 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:26:13 [INFO    ] boptimus: ------------------
+2026-05-11 22:26:13 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:26:13 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:26:13 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:26:13 [INFO    ] boptimus: ------------------
+2026-05-11 22:35:09 [INFO    ] boptimus: Unload Translator
+2026-05-11 22:35:14 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 22:35:14 [INFO    ] discord.client: logging in using static token
+2026-05-11 22:35:16 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded Translator
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded basic
+2026-05-11 22:35:16 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 947, in _load_from_module_spec
+    await setup(self)
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 896, in setup
+    await bot.add_cog(Basic(bot))
+                      ~~~~~^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 70, in __init__
+    self.bot.tree.add_command(self.ctx_menu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 335, in add_command
+    _context_menu_add_helper(None, self._context_menus)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 324, in _context_menu_add_helper
+    raise CommandAlreadyRegistered(name, guild_id)
+discord.app_commands.errors.CommandAlreadyRegistered: Command 'play' already registered.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 952, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: CommandAlreadyRegistered: Command 'play' already registered.
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded effect
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded listeners
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded playlist
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded settings
+2026-05-11 22:35:16 [INFO    ] boptimus: Loaded task
+2026-05-11 22:35:16 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778564116.93
+2026-05-11 22:35:16 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 22:35:17 [INFO    ] boptimus: Slash commands synced.
+2026-05-11 22:35:18 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 72ff1408dce117143a6398c4db717636).
+2026-05-11 22:35:20 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 22:35:20 [INFO    ] boptimus: ------------------
+2026-05-11 22:35:20 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 22:35:20 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 22:35:20 [INFO    ] boptimus: ------------------
+2026-05-11 22:35:20 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 22:35:20 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 22:35:20 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 22:35:20 [INFO    ] boptimus: ------------------
+2026-05-11 22:39:30 [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'play'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 68, in connect_channel
+    channel = channel or ctx.author.voice.channel if isinstance(ctx, commands.Context) else ctx.user.voice.channel
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'channel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 841, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 124, in play
+    player = await voicelink.connect_channel(interaction)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\No-workspace\voicelink\player.py", line 70, in connect_channel
+    raise VoicelinkException(texts[0])
+voicelink.exceptions.VoicelinkException: No voice channel to connect. Please either provide one or join one.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 867, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 860, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'play' raised an exception: VoicelinkException: No voice channel to connect. Please either provide one or join one.
+2026-05-11 22:51:19 [WARNING ] Encore: WebSocket closed for node [DEFAULT]
+2026-05-11 22:51:19 [INFO    ] Encore: Trying to reconnect node [DEFAULT] in 6s
+2026-05-11 22:51:26 [ERROR   ] Encore: Reconnection failed: The password for node 'DEFAULT' is invalid.
+2026-05-11 22:51:26 [INFO    ] Encore: Trying to reconnect node [DEFAULT] in 6s
+2026-05-11 22:51:32 [ERROR   ] Encore: Reconnection failed: The password for node 'DEFAULT' is invalid.
+2026-05-11 22:51:32 [INFO    ] Encore: Trying to reconnect node [DEFAULT] in 14s
+2026-05-11 22:51:47 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 23:07:36 [INFO    ] boptimus: Unload Translator
+2026-05-11 23:07:41 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 23:07:41 [INFO    ] discord.client: logging in using static token
+2026-05-11 23:07:44 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 23:07:44 [INFO    ] boptimus: Loaded Translator
+2026-05-11 23:07:44 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 371
+    return await send_localized_message(interaction")
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 371)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: SyntaxError: unterminated string literal (detected at line 371) (basic.py, line 371)
+2026-05-11 23:07:44 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 104
+    await send_localized_message(interaction")
+                                            ^
+SyntaxError: unterminated string literal (detected at line 104)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: SyntaxError: unterminated string literal (detected at line 104) (basic_slash.py, line 104)
+2026-05-11 23:07:44 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 941, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.effect' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 944, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.effect' has no 'setup' function.
+2026-05-11 23:07:44 [INFO    ] boptimus: Loaded listeners
+2026-05-11 23:07:44 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 354
+    return await dispatch_message(interaction, embed), share=False)
+                                                                  ^
+SyntaxError: unmatched ')'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: SyntaxError: unmatched ')' (playlist.py, line 354)
+2026-05-11 23:07:44 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 80
+    await MongoDBHandler.update_settings(interaction.guild.id")
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: SyntaxError: unterminated string literal (detected at line 80) (settings.py, line 80)
+2026-05-11 23:07:44 [INFO    ] boptimus: Loaded task
+2026-05-11 23:07:44 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778566064.83
+2026-05-11 23:07:44 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 23:07:45 [INFO    ] boptimus: Slash commands synced.
+2026-05-11 23:07:45 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 23:07:46 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 31d6fc18ebf304d4f5383ed0412828aa).
+2026-05-11 23:07:48 [INFO    ] boptimus: ------------------
+2026-05-11 23:07:48 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 23:07:48 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 23:07:48 [INFO    ] boptimus: ------------------
+2026-05-11 23:07:48 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 23:07:48 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 23:07:48 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 23:07:48 [INFO    ] boptimus: ------------------
+2026-05-11 23:10:42 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-11 23:10:42 [INFO    ] discord.client: logging in using static token
+2026-05-11 23:10:45 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-11 23:10:45 [INFO    ] boptimus: Loaded Translator
+2026-05-11 23:10:45 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 371
+    return await send_localized_message(interaction")
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 371)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: SyntaxError: unterminated string literal (detected at line 371) (basic.py, line 371)
+2026-05-11 23:10:45 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 104
+    await send_localized_message(interaction")
+                                            ^
+SyntaxError: unterminated string literal (detected at line 104)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: SyntaxError: unterminated string literal (detected at line 104) (basic_slash.py, line 104)
+2026-05-11 23:10:45 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 941, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.effect' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 944, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.effect' has no 'setup' function.
+2026-05-11 23:10:45 [INFO    ] boptimus: Loaded listeners
+2026-05-11 23:10:45 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 354
+    return await dispatch_message(interaction, embed), share=False)
+                                                                  ^
+SyntaxError: unmatched ')'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: SyntaxError: unmatched ')' (playlist.py, line 354)
+2026-05-11 23:10:45 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 80
+    await MongoDBHandler.update_settings(interaction.guild.id")
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: SyntaxError: unterminated string literal (detected at line 80) (settings.py, line 80)
+2026-05-11 23:10:45 [INFO    ] boptimus: Loaded task
+2026-05-11 23:10:45 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778566245.15
+2026-05-11 23:10:45 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-11 23:10:45 [INFO    ] boptimus: Slash commands synced.
+2026-05-11 23:10:45 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-11 23:10:46 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 21313733544910ee850ae4545823a23e).
+2026-05-11 23:10:48 [INFO    ] boptimus: ------------------
+2026-05-11 23:10:48 [INFO    ] boptimus: Logging As Boptimus#3358
+2026-05-11 23:10:48 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-11 23:10:48 [INFO    ] boptimus: ------------------
+2026-05-11 23:10:48 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-11 23:10:48 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-11 23:10:48 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-11 23:10:48 [INFO    ] boptimus: ------------------
+2026-05-12 00:15:27 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 00:15:27 [INFO    ] discord.client: logging in using static token
+2026-05-12 00:15:41 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 00:15:41 [INFO    ] discord.client: logging in using static token
+2026-05-12 00:15:43 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 00:15:43 [INFO    ] boptimus: Loaded Translator
+2026-05-12 00:15:43 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 371
+    return await send_localized_message(interaction")
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 371)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: SyntaxError: unterminated string literal (detected at line 371) (basic.py, line 371)
+2026-05-12 00:15:43 [ERROR   ] boptimus: Something went wrong while loading basic_slash cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic_slash.py", line 104
+    await send_localized_message(interaction")
+                                            ^
+SyntaxError: unterminated string literal (detected at line 104)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic_slash' raised an error: SyntaxError: unterminated string literal (detected at line 104) (basic_slash.py, line 104)
+2026-05-12 00:15:43 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 941, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.effect' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 944, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.effect' has no 'setup' function.
+2026-05-12 00:15:43 [INFO    ] boptimus: Loaded listeners
+2026-05-12 00:15:43 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 354
+    return await dispatch_message(interaction, embed), share=False)
+                                                                  ^
+SyntaxError: unmatched ')'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: SyntaxError: unmatched ')' (playlist.py, line 354)
+2026-05-12 00:15:43 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 80
+    await MongoDBHandler.update_settings(interaction.guild.id")
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: SyntaxError: unterminated string literal (detected at line 80) (settings.py, line 80)
+2026-05-12 00:15:43 [INFO    ] boptimus: Loaded task
+2026-05-12 00:15:43 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778570143.76
+2026-05-12 00:15:43 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 00:15:44 [INFO    ] boptimus: Auto-registered 0 slash commands globally.
+2026-05-12 00:15:44 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 00:15:44 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a10ddaeb56f32867582cc8391fb4d585).
+2026-05-12 00:15:46 [INFO    ] boptimus: ------------------
+2026-05-12 00:15:46 [INFO    ] boptimus: Logging As: Boptimus#3358
+2026-05-12 00:15:46 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-12 00:15:46 [INFO    ] boptimus: Slash Commands: 0
+2026-05-12 00:15:46 [INFO    ] boptimus: ------------------
+2026-05-12 00:15:46 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 00:15:46 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 00:15:46 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 00:15:46 [INFO    ] boptimus: ------------------
+2026-05-12 00:18:22 [INFO    ] boptimus: Unload Translator
+2026-05-12 00:18:26 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 00:18:26 [INFO    ] discord.client: logging in using static token
+2026-05-12 00:18:28 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 00:18:28 [INFO    ] boptimus: Loaded Translator
+2026-05-12 00:18:28 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 371
+    return await send_localized_message(interaction")
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 371)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: SyntaxError: unterminated string literal (detected at line 371) (basic.py, line 371)
+2026-05-12 00:18:28 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 941, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.effect' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 944, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.effect' has no 'setup' function.
+2026-05-12 00:18:28 [INFO    ] boptimus: Loaded listeners
+2026-05-12 00:18:28 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 354
+    return await dispatch_message(interaction, embed), share=False)
+                                                                  ^
+SyntaxError: unmatched ')'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: SyntaxError: unmatched ')' (playlist.py, line 354)
+2026-05-12 00:18:28 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 80
+    await MongoDBHandler.update_settings(interaction.guild.id")
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: SyntaxError: unterminated string literal (detected at line 80) (settings.py, line 80)
+2026-05-12 00:18:28 [INFO    ] boptimus: Loaded task
+2026-05-12 00:18:28 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778570308.53
+2026-05-12 00:18:28 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 00:18:28 [INFO    ] boptimus: Auto-registered 0 slash commands globally.
+2026-05-12 00:18:29 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 00:18:29 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c9740b58803cdb103c6b357b6e8dbe93).
+2026-05-12 00:18:31 [INFO    ] boptimus: ------------------
+2026-05-12 00:18:31 [INFO    ] boptimus: Logging As: Boptimus#3358
+2026-05-12 00:18:31 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-12 00:18:31 [INFO    ] boptimus: Slash Commands: 0
+2026-05-12 00:18:31 [INFO    ] boptimus: ------------------
+2026-05-12 00:18:31 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 00:18:31 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 00:18:31 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 00:18:31 [INFO    ] boptimus: ------------------
+2026-05-12 00:20:51 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 00:20:51 [INFO    ] discord.client: logging in using static token
+2026-05-12 00:21:00 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 00:21:00 [INFO    ] discord.client: logging in using static token
+2026-05-12 00:21:02 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 00:21:02 [INFO    ] boptimus: Loaded Translator
+2026-05-12 00:21:02 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 371
+    return await send_localized_message(interaction")
+                                                   ^
+SyntaxError: unterminated string literal (detected at line 371)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: SyntaxError: unterminated string literal (detected at line 371) (basic.py, line 371)
+2026-05-12 00:21:02 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 941, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.effect' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 944, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.effect' has no 'setup' function.
+2026-05-12 00:21:02 [INFO    ] boptimus: Loaded listeners
+2026-05-12 00:21:02 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 354
+    return await dispatch_message(interaction, embed), share=False)
+                                                                  ^
+SyntaxError: unmatched ')'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: SyntaxError: unmatched ')' (playlist.py, line 354)
+2026-05-12 00:21:02 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 80
+    await MongoDBHandler.update_settings(interaction.guild.id")
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 80)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: SyntaxError: unterminated string literal (detected at line 80) (settings.py, line 80)
+2026-05-12 00:21:02 [INFO    ] boptimus: Loaded task
+2026-05-12 00:21:02 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778570462.86
+2026-05-12 00:21:02 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 00:21:03 [INFO    ] boptimus: Auto-registered 0 slash commands globally.
+2026-05-12 00:21:03 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 00:21:03 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 78f3daf37635aa8a39587ef831b97300).
+2026-05-12 00:21:05 [INFO    ] boptimus: ------------------
+2026-05-12 00:21:05 [INFO    ] boptimus: Logging As: Boptimus#3358
+2026-05-12 00:21:05 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-12 00:21:05 [INFO    ] boptimus: Slash Commands: 0
+2026-05-12 00:21:05 [INFO    ] boptimus: ------------------
+2026-05-12 00:21:05 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 00:21:05 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 00:21:05 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 00:21:05 [INFO    ] boptimus: ------------------
+2026-05-12 00:45:18 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 78f3daf37635aa8a39587ef831b97300.
+2026-05-12 01:02:55 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c9740b58803cdb103c6b357b6e8dbe93.
+2026-05-12 01:08:31 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 78f3daf37635aa8a39587ef831b97300.
+2026-05-12 01:18:19 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c9740b58803cdb103c6b357b6e8dbe93.
+2026-05-12 01:20:55 [WARNING ] Encore: WebSocket closed for node [DEFAULT]
+2026-05-12 01:20:55 [INFO    ] Encore: Trying to reconnect node [DEFAULT] in 4s
+2026-05-12 01:20:59 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 01:31:46 [WARNING ] Encore: WebSocket closed for node [DEFAULT]
+2026-05-12 01:31:46 [INFO    ] Encore: Trying to reconnect node [DEFAULT] in 13s
+2026-05-12 01:32:00 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 01:59:41 [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session c9740b58803cdb103c6b357b6e8dbe93.
+2026-05-12 19:10:59 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:10:59 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:11:02 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:11:02 [INFO    ] boptimus: Loaded Translator
+2026-05-12 19:11:02 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 32, in <module>
+    from function import (
+    ...<3 lines>...
+    )
+ImportError: cannot import name 'cooldown_check' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: ImportError: cannot import name 'cooldown_check' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:11:02 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\effect.py", line 27, in <module>
+    from function import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.effect' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:11:03 [INFO    ] boptimus: Loaded listeners
+2026-05-12 19:11:03 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 32, in <module>
+    from function import (
+    ...<3 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:11:03 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 31, in <module>
+    from function import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:11:03 [INFO    ] boptimus: Loaded task
+2026-05-12 19:11:03 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778638263.09
+2026-05-12 19:11:03 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:11:03 [INFO    ] boptimus: Auto-registered 0 slash commands globally.
+2026-05-12 19:11:04 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:11:04 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d129fd65f8ebf49872441346872a251f).
+2026-05-12 19:11:06 [INFO    ] boptimus: ------------------
+2026-05-12 19:11:06 [INFO    ] boptimus: Logging As: Boptimus#3358
+2026-05-12 19:11:06 [INFO    ] boptimus: Bot ID: 1503563744238633060
+2026-05-12 19:11:06 [INFO    ] boptimus: Slash Commands: 0
+2026-05-12 19:11:06 [INFO    ] boptimus: ------------------
+2026-05-12 19:11:06 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 19:11:06 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 19:11:06 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:11:06 [INFO    ] boptimus: ------------------
+2026-05-12 19:13:44 [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+2026-05-12 19:13:50 [INFO    ] boptimus: Unload Translator
+2026-05-12 19:15:33 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:15:33 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:15:36 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:15:36 [INFO    ] boptimus: Loaded Translator
+2026-05-12 19:15:36 [ERROR   ] boptimus: Something went wrong while loading basic cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\basic.py", line 32, in <module>
+    from function import (
+    ...<3 lines>...
+    )
+ImportError: cannot import name 'cooldown_check' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.basic' raised an error: ImportError: cannot import name 'cooldown_check' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:15:36 [ERROR   ] boptimus: Something went wrong while loading effect cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\effect.py", line 27, in <module>
+    from function import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.effect' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:15:36 [INFO    ] boptimus: Loaded listeners
+2026-05-12 19:15:36 [ERROR   ] boptimus: Something went wrong while loading playlist cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\playlist.py", line 32, in <module>
+    from function import (
+    ...<3 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.playlist' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:15:36 [ERROR   ] boptimus: Something went wrong while loading settings cog.
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 935, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\Admin\Downloads\No-workspace\cogs\settings.py", line 31, in <module>
+    from function import (
+    ...<2 lines>...
+    )
+ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\No-workspace\main.py", line 86, in setup_hook
+    await self.load_extension(f"cogs.{module[:-3]}")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 1013, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ext\commands\bot.py", line 938, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.settings' raised an error: ImportError: cannot import name 'get_aliases' from 'function' (C:\Users\Admin\Downloads\No-workspace\function.py)
+2026-05-12 19:15:36 [INFO    ] boptimus: Loaded task
+2026-05-12 19:15:36 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778638536.84
+2026-05-12 19:15:36 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:15:37 [INFO    ] boptimus: Auto-registered 0 slash commands globally.
+2026-05-12 19:15:37 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:15:37 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 517954f7b19081dbf41ca448500260b6).
+2026-05-12 19:15:39 [INFO    ] boptimus: ------------------
+2026-05-12 19:15:39 [INFO    ] boptimus: Logging As: Yeetify#4292
+2026-05-12 19:15:39 [INFO    ] boptimus: Bot ID: 1503943524456861726
+2026-05-12 19:15:39 [INFO    ] boptimus: Slash Commands: 0
+2026-05-12 19:15:39 [INFO    ] boptimus: ------------------
+2026-05-12 19:15:39 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 19:15:39 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 19:15:39 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:15:39 [INFO    ] boptimus: ------------------
+2026-05-12 19:17:21 [INFO    ] boptimus: Unload Translator
+2026-05-12 19:17:25 [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+2026-05-12 19:17:25 [INFO    ] discord.client: logging in using static token
+2026-05-12 19:17:27 [INFO    ] Encore.db: MongoDB databases initialized: AxonX
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded Translator
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded basic
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded effect
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded listeners
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded playlist
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded settings
+2026-05-12 19:17:27 [INFO    ] boptimus: Loaded task
+2026-05-12 19:17:27 [INFO    ] Encore.db: Starting cache cleanup at timestamp: 1778638647.98
+2026-05-12 19:17:27 [INFO    ] Encore.db: Cache cleanup completed. Current cache size: 0
+2026-05-12 19:17:28 [INFO    ] Encore: Node [DEFAULT] is connected!
+2026-05-12 19:17:30 [INFO    ] boptimus: Auto-registered 44 slash commands globally.
+2026-05-12 19:17:30 [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 23679a11bdaac748f0f6befb7dc611df).
+2026-05-12 19:17:32 [INFO    ] boptimus: ------------------
+2026-05-12 19:17:32 [INFO    ] boptimus: Logging As: Yeetify#4292
+2026-05-12 19:17:32 [INFO    ] boptimus: Bot ID: 1503943524456861726
+2026-05-12 19:17:32 [INFO    ] boptimus: Slash Commands: 44
+2026-05-12 19:17:32 [INFO    ] boptimus: ------------------
+2026-05-12 19:17:32 [INFO    ] boptimus: Boptimus Version: v2.7.3
+2026-05-12 19:17:32 [INFO    ] boptimus: Discord Version: 2.3.0a
+2026-05-12 19:17:32 [INFO    ] boptimus: Python Version: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+2026-05-12 19:17:32 [INFO    ] boptimus: ------------------
+2026-05-12 19:21:48 [INFO    ] boptimus: Unload Translator

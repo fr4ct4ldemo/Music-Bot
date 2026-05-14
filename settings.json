@@ -1,0 +1,206 @@
+{
+    "token": "MTUwMzk0MzUyNDQ1Njg2MTcyNg.G8Z3oH.zWoGcpawKCQRcDWwbNiBZb_17xZfpPEOncGhJ0",
+    "client_id": "1503943524456861726",
+    "genius_token": "GGWOEn1UqtVzi-R8l5GLrjQYESMUK_6A4J2ZQCT4E2RIEegxPcRkOqJzP61hDj-76FMPsp2Y82Yl2LhAbMS5Mg",
+    "mongodb_url": "mongodb+srv://AxonXmongodb:lZ094WUUk5XVHhlH@cluster0.l3wkja9.mongodb.net/?appName=Cluster0",
+    "mongodb_name": "AxonX",
+    "nodes": {
+        "DEFAULT": {
+            "host": "lava-v4.millohost.my.id",
+            "port": 443,
+            "password": "https://discord.gg/mjS5J2K3ep",
+            "secure": true,
+            "identifier": "DEFAULT",
+            "yt_ratelimit": {
+                "tokens": [],
+                "config": {
+                    "retry_time": 10800,
+                    "max_requests": 30
+                },
+                "strategy": "LoadBalance"
+            }
+        }
+    },
+    "prefix": "?",
+    "activity": [
+        {
+            "type": "listening",
+            "name": "the bops \ud83c\udfb5",
+            "status": "online"
+        }
+    ],
+    "logging": {
+        "file": {
+            "path": "./logs",
+            "enable": true
+        },
+        "level": {
+            "discord": "INFO",
+            "yeetify": "INFO",
+            "ipc_client": "INFO"
+        },
+        "max_history": 30
+    },
+    "bot_access_user": [],
+    "embed_color": "0xFF00E2",
+    "default_max_queue": 1000,
+    "default_search_platform": "youtube",
+    "lyrics_platform": "lrclib",
+    "ipc_client": {
+        "host": "127.0.0.1",
+        "port": 8000,
+        "password": "YOUR_PASSWORD",
+        "secure": false,
+        "enable": false
+    },
+    "timer_settings": {
+        "bot_activity_update": 600,
+        "inactive_player_cleanup": 600,
+        "cache_cleanup": 43200
+    },
+    "playlist_settings": {
+        "max_playlists": 5,
+        "max_tracks_per_playlist": 500,
+        "default_playlist_name": "Favourites"
+    },
+    "sources_settings": {
+        "youtube": {
+            "emoji": "<:youtube:826661982760992778>",
+            "color": "0xFF00E2"
+        },
+        "youtubemusic": {
+            "emoji": "<:youtube:826661982760992778>",
+            "color": "0xFF00E2"
+        },
+        "spotify": {
+            "emoji": "<:spotify:826661996615172146>",
+            "color": "0xFF00E2"
+        },
+        "soundcloud": {
+            "emoji": "<:soundcloud:852729280027033632>",
+            "color": "0xFF00E2"
+        },
+        "twitch": {
+            "emoji": "<:twitch:852729278285086741>",
+            "color": "0xFF00E2"
+        },
+        "bandcamp": {
+            "emoji": "<:bandcamp:864694003811221526>",
+            "color": "0xFF00E2"
+        },
+        "vimeo": {
+            "emoji": "<:vimeo:864694001919721473>",
+            "color": "0xFF00E2"
+        },
+        "applemusic": {
+            "emoji": "<:applemusic:994844332374884413>",
+            "color": "0xFF00E2"
+        },
+        "reddit": {
+            "emoji": "<:reddit:996007566863773717>",
+            "color": "0xFF00E2"
+        },
+        "tiktok": {
+            "emoji": "<:tiktok:996007689798811698>",
+            "color": "0xFF00E2"
+        },
+        "others": {
+            "emoji": "\ud83d\udd17",
+            "color": "0xFF00E2"
+        }
+    },
+    "default_controller": {
+        "embeds": {
+            "active": {
+                "author": {
+                    "name": "<a:yeetifyequalizer:1504328725225803826> Now Playing  \u2022  @@channel_name@@",
+                    "icon_url": "@@bot_icon@@"
+                },
+                "description": "### [@@track_name@@](@@track_url@@)\n> \ud83d\udc64 **Requested by** @@track_requester_mention@@\n> <a:yeetifyheadphones:1504328824698175529> **DJ:** @@dj@@",
+                "footer": {
+                    "text": "<a:yeetifynote:1504328766774837258> @@track_duration@@  \u2022  <a:yeetifyspeaker:1504328893513990264> @@volume@@%  \u2022  <a:yeetifyvinyl:1504328955069468763> @@queue_length@@ in queue{{loop_mode != 'Off' ??  \u2022  \ud83d\udd01 @@loop_mode@@}}"
+                },
+                "thumbnail": "@@track_requester_avatar@@",
+                "image": "@@track_thumbnail@@",
+                "color": "0xFF00E2"
+            },
+            "inactive": {
+                "author": {
+                    "name": "Yeetify  \u2022  by Encore",
+                    "icon_url": "@@bot_icon@@"
+                },
+                "title": {
+                    "name": "<a:yeetifynote:1504328766774837258>  No songs playing right now"
+                },
+                "description": "> Queue up something and let the bops flow!\n\n[Invite Yeetify](@@invite_link@@) | [Support](@@server_invite_link@@)",
+                "color": "@@default_embed_color@@"
+            }
+        },
+        "buttons": [
+            {
+                "back": {
+                    "emoji": "<a:yeetifyequalizer:1504328725225803826>",
+                    "label": ""
+                },
+                "play-pause": {
+                    "states": {
+                        "pause": {
+                            "emoji": "<a:yeetifyheadphones:1504328824698175529>",
+                            "label": ""
+                        },
+                        "resume": {
+                            "emoji": "<a:yeetifynote:1504328766774837258>",
+                            "label": ""
+                        }
+                    }
+                },
+                "skip": {
+                    "emoji": "<a:yeetifyvinyl:1504328955069468763>",
+                    "label": ""
+                },
+                "stop": {
+                    "emoji": "<a:yeetifyspeaker:1504328893513990264>",
+                    "label": "",
+                    "style": "red"
+                },
+                "add-fav": {
+                    "emoji": "\u2764\ufe0f",
+                    "label": ""
+                }
+            },
+            {
+                "tracks": {
+                    "label": "<a:yeetifynote:1504328766774837258>  Select a track...",
+                    "max_options": 10
+                }
+            }
+        ]
+    },
+    "default_voice_status_template": "{{@@track_name@@ != 'None' ?? @@track_source_emoji@@ @@track_name@@ \u2014 Boptimus // <a:yeetifynote:1504328766774837258> Boptimus \u2022 Ready for requests}}",
+    "cooldowns": {
+        "connect": [
+            2,
+            30
+        ],
+        "playlist view": [
+            1,
+            30
+        ]
+    },
+    "aliases": {
+        "connect": [
+            "join"
+        ],
+        "leave": [
+            "stop",
+            "bye"
+        ],
+        "play": [
+            "p"
+        ],
+        "view": [
+            "v"
+        ]
+    },
+    "version": "v2.7.3"
+}
