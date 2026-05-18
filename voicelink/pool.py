@@ -244,7 +244,11 @@ class Node:
                 return
 
         if op == "event":
-            await player._dispatch_event(data)
+            try:
+                await player._dispatch_event(data)
+            except AttributeError:
+                # Ignore unknown event types sent by the node (e.g. PlayerCreatedEvent, PlayerConnectedEvent)
+                self._logger.debug(f"Ignoring unknown event type: {data.get('type')}")
         elif op == "playerUpdate":
             await player._update_state(data)
 
@@ -253,19 +257,26 @@ class Node:
             raise NodeNotAvailable(f"The node '{self._identifier}' is unavailable.")
         
         uri: str = f"{self._rest_uri}/{NODE_VERSION}/{query}"
-        async with self._session.request(
-            method=method.value,
-            url=uri,
-            headers={"Authorization": self._password},
-            json=data
-        ) as resp:
-            if resp.status >= 300:
-                raise NodeException(f"Getting errors from Lavalink REST api")
-            
-            if method == RequestMethod.DELETE:
-                return await resp.json(content_type=None)
+        try:
+            async with self._session.request(
+                method=method.value,
+                url=uri,
+                headers={"Authorization": self._password},
+                json=data
+            ) as resp:
+                if resp.status >= 300:
+                    raise NodeException(f"Getting errors from Lavalink REST api")
+                
+                if method == RequestMethod.DELETE:
+                    return await resp.json(content_type=None)
 
-            return await resp.json()
+                return await resp.json()
+        except (aiohttp.ServerDisconnectedError, asyncio.TimeoutError) as e:
+            self._logger.warning(f"Connection error to node '{self._identifier}': {type(e).__name__}")
+            raise NodeException(f"Node connection failed: {type(e).__name__}")
+        except aiohttp.ClientError as e:
+            self._logger.warning(f"Client error communicating with node '{self._identifier}': {e}")
+            raise NodeException(f"Node communication error: {e}")
 
     async def connect(self) -> Node:
         """Initiates a connection with a Lavalink node and adds it to the node pool."""
@@ -369,7 +380,19 @@ class Node:
         if not URL_REGEX.match(query) and ':' not in query:
             query = f"{search_type}:{query}"
 
-        response: dict[str, Any] = await self.send(RequestMethod.GET, f"loadtracks?identifier={quote(query)}")
+        try:
+            # Wrap the send() call with a 10-second timeout
+            response: dict[str, Any] = await asyncio.wait_for(
+                self.send(RequestMethod.GET, f"loadtracks?identifier={quote(query)}"),
+                timeout=10.0
+            )
+        except asyncio.TimeoutError:
+            self._logger.warning(f"Timeout loading tracks from node '{self._identifier}' for query: {query}")
+            return None
+        except Exception as e:
+            self._logger.warning(f"Error loading tracks from node '{self._identifier}': {e}")
+            return None
+        
         data = response.get("data")
         load_type = response.get("loadType")
 
@@ -380,7 +403,9 @@ class Node:
             return None
 
         elif load_type == "error":
-            raise TrackLoadError(f"{data['message']} [{data['severity']}]")
+            error_msg = data.get('message', 'Unknown error') if data else 'Track could not be loaded'
+            severity = f" [{data['severity']}]" if data and data.get('severity') else ''
+            raise TrackLoadError(f"{error_msg}{severity}")
 
         elif load_type in ("playlist", "recommendations"):
             return Playlist(playlist_info=data["info"], tracks=data["tracks"], requester=requester)
