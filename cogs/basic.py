@@ -36,6 +36,7 @@ from function import (
 )
 
 from voicelink import MongoDBHandler, LangHandler, Config
+from voicelink.exceptions import VoicelinkException
 from voicelink.views import SearchView, QueueView, LinkView, LyricsView, HelpView
 from voicelink.utils import format_ms, format_to_ms, truncate_string, dispatch_message, send_localized_message
 
@@ -162,6 +163,11 @@ class Basic(commands.Cog):
             if not player.is_playing:
                 await player.do_next()
         
+        except VoicelinkException as e:
+            try:
+                await dispatch_message(ctx, str(e), ephemeral=True)
+            except Exception:
+                pass
         except Exception as e:
             logger.error(f"Error in play command for guild {ctx.guild.id}", exc_info=e)
             try:
@@ -169,7 +175,6 @@ class Basic(commands.Cog):
             except Exception:
                 pass
 
-    
     @commands.dynamic_cooldown(cooldown_check, commands.BucketType.guild)
     async def _play(self, interaction: discord.Interaction, message: discord.Message):
         try:
@@ -223,6 +228,11 @@ class Basic(commands.Cog):
             if not player.is_playing:
                     await player.do_next()
         
+        except VoicelinkException as e:
+            try:
+                await dispatch_message(interaction, str(e), ephemeral=True)
+            except Exception:
+                pass
         except Exception as e:
             logger.error(f"Error in _play context menu for guild {interaction.guild.id}", exc_info=e)
             try:
@@ -284,6 +294,11 @@ class Basic(commands.Cog):
                 if not player.is_playing:
                     await player.do_next()
         
+        except VoicelinkException as e:
+            try:
+                await dispatch_message(ctx, str(e), ephemeral=True)
+            except Exception:
+                pass
         except Exception as e:
             logger.error(f"Error in search command for guild {ctx.guild.id}", exc_info=e)
             try:
@@ -341,6 +356,11 @@ class Basic(commands.Cog):
             if not player.is_playing:
                 await player.do_next()
         
+        except VoicelinkException as e:
+            try:
+                await dispatch_message(ctx, str(e), ephemeral=True)
+            except Exception:
+                pass
         except Exception as e:
             logger.error(f"Error in playtop command for guild {ctx.guild.id}", exc_info=e)
             try:
@@ -397,6 +417,11 @@ class Basic(commands.Cog):
                 
             await player.stop() if player.is_playing else await player.do_next()
         
+        except VoicelinkException as e:
+            try:
+                await dispatch_message(ctx, str(e), ephemeral=True)
+            except Exception:
+                pass
         except Exception as e:
             logger.error(f"Error in forceplay command for guild {ctx.guild.id}", exc_info=e)
             try:
