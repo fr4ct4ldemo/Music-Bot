@@ -265,7 +265,8 @@ class Node:
                 json=data
             ) as resp:
                 if resp.status >= 300:
-                    raise NodeException(f"Getting errors from Lavalink REST api")
+                    self._logger.warning(f"Node '{self._identifier}' returned HTTP {resp.status} for {method.value} {uri}")
+                    raise NodeException(f"Getting errors from Lavalink REST api (HTTP {resp.status})")
                 
                 if method == RequestMethod.DELETE:
                     return await resp.json(content_type=None)
@@ -366,7 +367,8 @@ class Node:
         query: str,
         *,
         requester: Member,
-        search_type: SearchType = None
+        search_type: SearchType = None,
+        timeout: float = 10.0
     ) -> Union[List[Track], Playlist]:
         """
         Fetches tracks from the node's REST api to parse into Lavalink.
@@ -381,10 +383,9 @@ class Node:
             query = f"{search_type}:{query}"
 
         try:
-            # Wrap the send() call with a 10-second timeout
             response: dict[str, Any] = await asyncio.wait_for(
                 self.send(RequestMethod.GET, f"loadtracks?identifier={quote(query)}"),
-                timeout=10.0
+                timeout=timeout
             )
         except asyncio.TimeoutError:
             self._logger.warning(f"Timeout loading tracks from node '{self._identifier}' for query: {query}")
