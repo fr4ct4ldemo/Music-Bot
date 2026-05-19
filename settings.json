@@ -6,10 +6,10 @@
     "mongodb_name": "AxonX",
     "nodes": {
         "DEFAULT": {
-            "host": "lava-v4.millohost.my.id",
-            "port": 443,
-            "password": "https://discord.gg/mjS5J2K3ep",
-            "secure": true,
+            "host": "lavalink.jirayu.net",
+            "port": 13592,
+            "password": "youshallnotpass",
+            "secure": false,
             "identifier": "DEFAULT",
             "yt_ratelimit": {
                 "tokens": [],
