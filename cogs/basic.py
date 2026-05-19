@@ -81,25 +81,28 @@ class Basic(commands.Cog):
         return [app_commands.Choice(name=c.capitalize(), value=c) for c in self.bot.cogs if c not in ["Nodes", "Task"] and current in c]
 
     async def play_autocomplete(self, interaction: discord.Interaction, current: str) -> list:
-        if voicelink.pool.URL_REGEX.match(current):
+        try:
+            if voicelink.pool.URL_REGEX.match(current):
+                return []
+
+            if current:
+                node = voicelink.NodePool.get_node()
+                if not node:
+                    return []
+                
+                tracks: list[voicelink.Track] = await node.get_tracks(current, requester=interaction.user, timeout=2.5)
+                if not tracks:
+                    return []
+                
+                if isinstance(tracks, voicelink.Playlist):
+                    tracks = tracks.tracks
+
+                return [app_commands.Choice(name=truncate_string(f"♪ [{track.formatted_length}] {track.author} - {track.title}", 100), value=track.uri) for track in tracks[:25]]
+            
+            history = {track["identifier"]: track for track_id in reversed(await MongoDBHandler.get_user(interaction.user.id, d_type="history")) if (track := voicelink.Track.decode(track_id))["uri"]}
+            return [app_commands.Choice(name=truncate_string(f"🕒 [{format_ms(track['length'])}] {track['author']} - {track['title']}", 100), value=track['uri']) for track in history.values() if len(track['uri']) <= 100][:25]
+        except Exception:
             return []
-
-        if current:
-            node = voicelink.NodePool.get_node()
-            if not node:
-                return []
-            
-            tracks: list[voicelink.Track] = await node.get_tracks(current, requester=interaction.user)
-            if not tracks:
-                return []
-            
-            if isinstance(tracks, voicelink.Playlist):
-                tracks = tracks.tracks
-
-            return [app_commands.Choice(name=truncate_string(f"♪ [{track.formatted_length}] {track.author} - {track.title}", 100), value=track.uri) for track in tracks]
-        
-        history = {track["identifier"]: track for track_id in reversed(await MongoDBHandler.get_user(interaction.user.id, d_type="history")) if (track := voicelink.Track.decode(track_id))["uri"]}
-        return [app_commands.Choice(name=truncate_string(f"🕒 [{format_ms(track['length'])}] {track['author']} - {track['title']}", 100), value=track['uri']) for track in history.values() if len(track['uri']) <= 100][:25]
             
     @commands.hybrid_command(name="connect", aliases=get_aliases("connect"))
     @app_commands.describe(channel="Provide a channel to connect.")
