@@ -3,7 +3,7 @@
     "client_id": "YOUR_CLIENTID",
     "genius_token": "YOUR_GENIUSTOKEN",
     "mongodb_url": "YOUR_MONGODB",
-    "mongodb_name": "AxonX",
+    "mongodb_name": "NAME",
     "nodes": {
         "DEFAULT": {
             "host": "lavalink.jirayu.net",
